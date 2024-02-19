@@ -1,0 +1,536 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: "Gilroy-Regular";
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+/* 
+body{
+    background-color: #F8F7F4;
+} */
+
+
+/* css for page 1 */
+
+#page1{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(247, 240, 192); */
+}
+
+#nav{
+    height: 120px;
+    width: 100%;
+    /* background-color: royalblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+
+#nav-part1{
+    width: 30%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-part1 h4{
+    font-family: "Work Sans";
+    font-size: 15px;
+    font-weight: 600;
+}
+#nav-part2{
+    width: 30%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#nav-part2 button{
+    padding: 15px 22px;
+    font-weight: 600;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-size: 17px;
+    margin:0 10px;
+}
+
+#nav-part2 button:nth-child(1){
+    background-color: transparent;
+    color: #000;
+}
+
+#nav img{
+    height: 100px;
+    /* width: 300px; */
+}
+
+
+
+
+#content{
+    height: calc(100% - 120px);
+    width: 100%;
+    /* background-color: crimson; */
+    padding-top: 65px;
+}
+
+#content h3{
+    background-color: #F2B0EA;
+    padding: 10px 16px;
+    width: fit-content;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 19px;
+    font-weight: 500;
+}
+
+#content h1{
+    font-family: "Source Serif 4";
+    font-size: 70px;
+    text-align: center;   
+    margin: 40px 0 24px;
+    line-height: 80px;
+}
+
+#content h4{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400;
+}
+#content button{
+    padding: 19px 26px;
+    font-weight: 600;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    /* margin:40px 0; */
+    margin-top: 35px;
+    margin-bottom: 65px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+#bottom{
+    height: 358px;
+    width: 100%;
+    /* background-color: red; */
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    /* overflow-x: auto; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 270px;
+    position: relative;
+    background-color: royalblue;
+    border-radius: 36px;
+    /* border: 2px solid black; */
+    /* overflow: hidden; */
+    
+    animation-name: anime;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.elem .text-bottom{
+    height: 30%;
+    width: 100%;
+    bottom: 0%;
+    border-radius: 0 0 36px 36px;
+    position: absolute;
+    /* background-color: black;  */
+    /* opacity: 14%; */
+}
+
+.text-bottom p{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 14px;
+    margin-left: 25px;
+    line-height: 24px;
+    font-size: 17px;
+    color: white;
+}
+
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    border-radius: 36px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.elem video{
+    height: 100%;
+    width: 100%;
+    border-radius: 36px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* css for page 2 */
+
+#page2{
+    height: 100%;
+    width: 100%;
+    margin-top: 15%;
+    /* background-color: rgb(220, 143, 143); */
+    position: relative;
+    padding: 80px;
+}
+
+#page2 h1{
+    font-size: 44px;
+    font-family: "verdana";
+    font-weight: 100;
+    margin-top: 3%;
+    margin-bottom: 2.3%;
+    text-align: center;
+ 
+}
+
+.box{
+    height: 245px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: royalblue;
+    display: inline-block;
+    transition: all ease .5s;
+    margin: 16px;
+    /* margin-top: 16px; */
+    overflow: hidden;
+    position: relative;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* object-position: center; */
+}
+
+.box-bottom{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.69));
+    position: absolute;
+    bottom: -40%;
+    transition: all ease .5s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.box-bottom h5{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+.box-bottom i{
+    background-color: white;
+    padding: 8px 9px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 50%;
+}
+.box:hover .box-bottom{
+    bottom: 0;
+}
+
+.box:hover{
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.362);
+}
+
+
+@keyframes anime {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+    
+}
+
+
+
+#page3{
+    height: 130%;
+    width: 100%;
+    margin-top: 61%;
+    /* background-color: yellow; */
+    position: relative;
+}
+
+#page3 button{
+    padding: 18px 14px;
+    border-radius: 50px;
+    /* margin:2px 0; */
+    position: absolute; 
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+#yellow{
+    position: absolute;
+    height: 72%;
+    width: 100%;
+    background-color: rgba(232, 194, 80, 0.918);
+    margin-top: 14%;
+}
+
+#yellow h1{
+    font-size: 73px;
+    font-weight: 100;
+    line-height: 70px;
+    /* font-family: "Source Serif 4"; */
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    text-align: center;
+    margin-top: 8%;
+}
+
+#yellow p{
+    font-size: 18px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 1.2%;
+    line-height: 38px;
+}
+
+
+#bt{
+    width: 20%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.8%;
+}
+
+
+#bt #one{
+    padding: 22px;
+    font-weight: 600;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-size: 13px;
+    margin:-6%;
+
+}
+
+#bt #two{
+    padding: 22px;
+    font-weight: 600;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    font-size: 13px;
+    margin: 6%;
+}
+
+#yellow h3{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#page4{
+    height: 450px;
+    width: 100%;
+}
+
+#last-bottom{
+    height: 230px;
+    width: 100%;
+    /* background-color: red; */
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    /* overflow-x: auto; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.l-box{
+    flex-shrink: 0;
+    height: 100%;
+    width: 210px;
+    position: relative;
+    /* background-color: royalblue; */
+    border-radius: 8px;   
+    animation-name: anime;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.l-box img{
+    height: 150px;
+    width: 210px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 10px 2px 10px rgba(0, 0, 0, 0.362);
+    object-position: center;
+}
+
+
+.text h5{
+    font-size: 13px;
+    margin-top: 12px;
+    padding: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+
+#foot-nav #foot{
+    height: 140px;
+    width: 100%;
+    /* background-color: royalblue; */
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding-left: 10%;
+    
+}
+
+#foot #foot-part1{
+    width: 60%;
+    margin-left: 4%;
+    /* margin-right: 6%; */
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#foot-part1 h4{
+    font-size: 13px;
+    font-weight: 600;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#foot-nav img{
+    height: 105px;
+    /* width: 300px; */
+}
+
+
+#foot-part2{
+    width: 5%;
+    margin-left: 12%;
+    margin-right: 15%;
+    gap: 9px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#foot-part2 i{
+    font-size: 28px;
+ padding: 4px;
+}
+
+
+
+
+
+
+@media (max-width:600px) {
+    
+#nav{
+    height: 50px;
+    width: 100%;
+    background-color: royalblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+
+#nav-part1{
+    width: 30%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-part1 h4{
+    font-family: "Work Sans";
+    font-size: 15px;
+    font-weight: 600;
+}
+#nav-part2{
+    width: 30%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#nav-part2 button{
+    padding: 15px 22px;
+    font-weight: 600;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-size: 17px;
+    margin:0 10px;
+}
+
+#nav-part2 button:nth-child(1){
+    background-color: transparent;
+    color: #000;
+}
+
+#nav img{
+    height: 100px;
+    /* width: 300px; */
+}
+}
